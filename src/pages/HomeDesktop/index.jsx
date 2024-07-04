@@ -19,7 +19,7 @@ export default function HomeDesktopPage() {
   const key = import.meta.env.VITE_API_KEY;
 
   const fetchWeatherData = (location) => {
-    axios.get(`http://api.weatherapi.com/v1/current.json?key=${key}&q=${location}&aqi=yes`)
+    axios.get(`https://api.weatherapi.com/v1/current.json?key=${key}&q=${location}&aqi=yes`)
       .then((res) => {
         const data = res.data;
         const newDatal = [
